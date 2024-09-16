@@ -48,28 +48,30 @@ INSERT INTO roles (nombre_rol) VALUES
 -- Tu código aquí
 ALTER TABLE usuarios ADD COLUMN id_rol INT;
 
-UPDATE usuarios SET id_rol = 1 WHERE id_usuarios = 1;
-UPDATE usuarios SET id_rol = 2 WHERE id_usuarios = 2;
-UPDATE usuarios SET id_rol = 3 WHERE id_usuarios = 3;
-UPDATE usuarios SET id_rol = 4 WHERE id_usuarios = 4;
-UPDATE usuarios SET id_rol = 4 WHERE id_usuarios = 5;
-UPDATE usuarios SET id_rol = 3 WHERE id_usuarios = 6;
-UPDATE usuarios SET id_rol = 2 WHERE id_usuarios = 7;
-UPDATE usuarios SET id_rol = 1 WHERE id_usuarios = 8;
-UPDATE usuarios SET id_rol = 1 WHERE id_usuarios = 9;
-UPDATE usuarios SET id_rol = 2 WHERE id_usuarios = 10;
-UPDATE usuarios SET id_rol = 3 WHERE id_usuarios = 11;
-UPDATE usuarios SET id_rol = 4 WHERE id_usuarios = 12;
-UPDATE usuarios SET id_rol = 1 WHERE id_usuarios = 13;
-UPDATE usuarios SET id_rol = 2 WHERE id_usuarios = 14;
-UPDATE usuarios SET id_rol = 3 WHERE id_usuarios = 15;
-UPDATE usuarios SET id_rol = 4 WHERE id_usuarios = 16;
-UPDATE usuarios SET id_rol = 4 WHERE id_usuarios = 17;
-UPDATE usuarios SET id_rol = 2 WHERE id_usuarios = 18;
-UPDATE usuarios SET id_rol = 1 WHERE id_usuarios = 19;
-UPDATE usuarios SET id_rol = 3 WHERE id_usuarios = 20;
+
+UPDATE usuarios SET id_rol = 1 WHERE id_usuario = 1;
+UPDATE usuarios SET id_rol = 2 WHERE id_usuario = 2;
+UPDATE usuarios SET id_rol = 3 WHERE id_usuario = 3;
+UPDATE usuarios SET id_rol = 4 WHERE id_usuario = 4;
+UPDATE usuarios SET id_rol = 4 WHERE id_usuario = 5;
+UPDATE usuarios SET id_rol = 3 WHERE id_usuario = 6;
+UPDATE usuarios SET id_rol = 2 WHERE id_usuario = 7;
+UPDATE usuarios SET id_rol = 1 WHERE id_usuario = 8;
+UPDATE usuarios SET id_rol = 1 WHERE id_usuario = 9;
+UPDATE usuarios SET id_rol = 2 WHERE id_usuario = 10;
+UPDATE usuarios SET id_rol = 3 WHERE id_usuario = 11;
+UPDATE usuarios SET id_rol = 4 WHERE id_usuario = 12;
+UPDATE usuarios SET id_rol = 1 WHERE id_usuario = 13;
+UPDATE usuarios SET id_rol = 2 WHERE id_usuario = 14;
+UPDATE usuarios SET id_rol = 3 WHERE id_usuario = 15;
+UPDATE usuarios SET id_rol = 4 WHERE id_usuario = 16;
+UPDATE usuarios SET id_rol = 4 WHERE id_usuario = 17;
+UPDATE usuarios SET id_rol = 2 WHERE id_usuario = 18;
+UPDATE usuarios SET id_rol = 1 WHERE id_usuario = 19;
+UPDATE usuarios SET id_rol = 3 WHERE id_usuario = 20;
 
 ALTER TABLE usuarios ADD FOREIGN KEY (id_rol) REFERENCES roles(id_rol);
+
 
 -- PASO 4
 -- Tu código aquí
